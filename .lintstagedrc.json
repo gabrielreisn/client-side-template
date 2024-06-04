@@ -1,0 +1,8 @@
+{
+  "*.{mjs,js,jsx,mst,ts,tsx}": [
+    "eslint --fix",
+    "bash -c tsc --noEmit",
+    "prettier --write"
+  ],
+  "*.{md,json,gql,graphql}": "prettier --write"
+}
