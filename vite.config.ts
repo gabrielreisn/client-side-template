@@ -12,5 +12,11 @@ export default defineConfig(() => {
       outDir: "public",
     },
     plugins: [react()],
+    test: {
+      environment: "jsdom",
+      setupFiles: ["./tests/setup.ts"],
+      testMatch: ["./tests/**/*.test.tsx"],
+      globals: true,
+    },
   };
 });
